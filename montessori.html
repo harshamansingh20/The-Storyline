@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Montessori — The Storyline</title>
+  <meta name="description" content="Montessori preschool for ages 1.5–3.5 at The Storyline, Mohali. Mixed-age classrooms, uninterrupted work cycles, real materials." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+<!-- ── Site Header ── -->
+<header class="site-header" role="banner">
+  <nav class="nav-inner" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="The Storyline — Home">
+      <img src="Admissions-Folder-1.svg" alt="The Storyline wordmark" height="56" />
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="montessori.html">Montessori</a></li>
+      <li><a href="cafe.html">Café</a></li>
+      <li><a href="connect.html">Connect</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://wa.me/919876543210" class="nav-phone" aria-label="Contact us on WhatsApp" target="_blank" rel="noopener noreferrer">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Contact Us
+      </a>
+      <button class="nav-hamburger" aria-expanded="false" aria-controls="nav-overlay" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<div class="nav-overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Navigation">
+  <nav class="nav-overlay-links" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="montessori.html">Montessori</a>
+    <a href="cafe.html">Café</a>
+    <a href="connect.html">Connect</a>
+  </nav>
+  <div class="nav-overlay-contact">
+    <a href="tel:+919876543210" class="label">+91 98765 43210</a>
+    <a href="mailto:hello@thestoryline.in" class="label">hello@thestoryline.in</a>
+    <p class="label" style="opacity:.4;margin-top:.5rem">Sector 66 A, SAS Nagar, Punjab</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE HERO
+══════════════════════════════════════════ -->
+<section class="page-hero" style="position:relative;min-height:90vh;display:flex;align-items:flex-end;padding-bottom:clamp(3rem,8vw,6rem);border-bottom:none;" aria-labelledby="montessori-heading">
+  <!-- Hero photo -->
+  <div aria-hidden="true" style="position:absolute;inset:0;overflow:hidden;">
+    <img src="images/montessori-hero.png" alt="" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;" />
+    <div style="position:absolute;inset:0;background:linear-gradient(to right, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.35) 55%, rgba(0,0,0,0.08) 100%);"></div>
+    <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,0.45) 0%, transparent 50%);"></div>
+  </div>
+  <div class="container" style="position:relative;z-index:1;">
+    <div style="max-width:700px;">
+      <h1 class="display-xl reveal reveal-delay-1" id="montessori-heading" style="color:var(--white);">
+        Learning<br>
+        <em class="serif-display">Through Living.</em>
+      </h1>
+      <svg class="wave-underline wave-underline--wide reveal reveal-delay-1" viewBox="0 0 360 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M0,10 Q7.5,2 15,10 T30,10 T45,10 T60,10 T75,10 T90,10 T105,10 T120,10 T135,10 T150,10 T165,10 T180,10 T195,10 T210,10 T225,10 T240,10 T255,10 T270,10 T285,10 T300,10 T315,10 T330,10 T345,10 T360,10" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="3.5" stroke-linecap="round"/>
+      </svg>
+      <p class="body-lg reveal reveal-delay-2" style="margin-top:1.5rem;max-width:56ch;color:rgba(255,255,255,0.78);">
+        In the Montessori tradition, the environment teaches. We prepare it carefully so children ages 1.5 to 3.5 can work independently, build concentration, and discover themselves as capable people.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ACTIVITY AREAS
+══════════════════════════════════════════ -->
+<section class="section" aria-labelledby="areas-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <h2 class="display-md" id="areas-heading">Four Areas<br><em class="serif-display">of Work.</em></h2>
+      </div>
+      <p class="body-md" style="max-width:38ch;opacity:.6;">Each area of the classroom addresses a different developmental need — none more important than another.</p>
+    </div>
+
+    <div class="grid-4" style="margin-top:var(--space-md);">
+
+      <article class="icon-card reveal">
+        <div class="icon-card-icon" aria-hidden="true">
+          <!-- Practical Life icon -->
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 4v6M10 8h8M7 14c0 3.866 3.134 7 7 7s7-3.134 7-7"/>
+            <path d="M5 14h2M21 14h2"/>
+            <circle cx="14" cy="14" r="2"/>
+          </svg>
+        </div>
+        <h3 class="icon-card-title">Practical Life</h3>
+        <p class="icon-card-text">Pouring, folding, spooning, buttoning. Activities drawn from real domestic life that build fine motor control, concentration, and the pride of doing things independently.</p>
+      </article>
+
+      <article class="icon-card reveal reveal-delay-1">
+        <div class="icon-card-icon" aria-hidden="true">
+          <!-- Sensorial icon -->
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="18" width="4" height="6"/>
+            <rect x="10" y="14" width="4" height="10"/>
+            <rect x="16" y="10" width="4" height="14"/>
+            <rect x="22" y="6" width="4" height="18" stroke-width="0" fill="currentColor" opacity=".15"/>
+            <path d="M4 6l6-4 6 4 6-4"/>
+          </svg>
+        </div>
+        <h3 class="icon-card-title">Sensorial</h3>
+        <p class="icon-card-text">Pink Tower, Brown Stair, Colour Tablets, Sound Boxes. Materials that isolate one quality at a time — size, weight, texture, pitch — and let children categorise the world through their senses.</p>
+      </article>
+
+      <article class="icon-card reveal reveal-delay-2">
+        <div class="icon-card-icon" aria-hidden="true">
+          <!-- Language icon -->
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h20v12H4zM8 22l4-4h12"/>
+            <path d="M9 10h10M9 14h6"/>
+          </svg>
+        </div>
+        <h3 class="icon-card-title">Language</h3>
+        <p class="icon-card-text">Object-picture matching, sandpaper letters, story baskets, and rich vocabulary work. Children build the foundation for reading and writing through hands and ears before pen meets paper.</p>
+      </article>
+
+      <article class="icon-card reveal reveal-delay-3">
+        <div class="icon-card-icon" aria-hidden="true">
+          <!-- Social Grace icon -->
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="10" cy="10" r="4"/>
+            <circle cx="20" cy="10" r="4"/>
+            <path d="M4 24c0-4 2.686-6 6-6h8c3.314 0 6 2 6 6"/>
+          </svg>
+        </div>
+        <h3 class="icon-card-title">Social Grace &amp; Courtesy</h3>
+        <p class="icon-card-text">Explicit lessons in greeting, waiting, asking, and thanking. In a mixed-age class, grace and courtesy are practised daily — older children model it, younger ones absorb it.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     WAVE
+══════════════════════════════════════════ -->
+<div class="wave-divider" aria-hidden="true" style="color:var(--ink);">
+  <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,24 Q22.5,6 45,24 T90,24 T135,24 T180,24 T225,24 T270,24 T315,24 T360,24 T405,24 T450,24 T495,24 T540,24 T585,24 T630,24 T675,24 T720,24 T765,24 T810,24 T855,24 T900,24 T945,24 T990,24 T1035,24 T1080,24 T1125,24 T1170,24 T1215,24 T1260,24 T1305,24 T1350,24 T1395,24 T1440,24 L1440,48 L0,48 Z" fill="#111111"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════════
+     OUR APPROACH
+══════════════════════════════════════════ -->
+<section class="section section-inverted" aria-labelledby="approach-heading">
+  <div class="container">
+    <div class="brand-story">
+      <div class="brand-story-text" style="color:var(--white);">
+        <h2 class="display-md reveal reveal-delay-1" id="approach-heading">
+          The prepared<br>
+          <em class="serif-display">environment.</em>
+        </h2>
+        <svg class="wave-underline wave-underline--white reveal reveal-delay-1" viewBox="0 0 240 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M0,10 Q7.5,2 15,10 T30,10 T45,10 T60,10 T75,10 T90,10 T105,10 T120,10 T135,10 T150,10 T165,10 T180,10 T195,10 T210,10 T225,10 T240,10" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="3.5" stroke-linecap="round"/>
+        </svg>
+
+        <div style="display:flex;flex-direction:column;gap:1.5rem;margin-top:1rem;">
+          <div class="reveal reveal-delay-2">
+            <h3 style="font-weight:700;font-size:1rem;margin-bottom:.4rem;color:var(--white);">Mixed-age classrooms (1.5 – 3.5)</h3>
+            <p style="font-size:.9rem;opacity:.55;line-height:1.65;">The three-year age span is not incidental. Older children consolidate their learning by teaching. Younger children are stretched by what they observe. The classroom becomes self-sustaining in ways a single-age room never can be.</p>
+          </div>
+          <div class="reveal reveal-delay-2" style="border-top:1px solid rgba(255,255,255,0.1);padding-top:1.5rem;">
+            <h3 style="font-weight:700;font-size:1rem;margin-bottom:.4rem;color:var(--white);">Uninterrupted work cycles</h3>
+            <p style="font-size:.9rem;opacity:.55;line-height:1.65;">Three hours, no interruptions. Concentration is a muscle, and it develops slowly. Our daily work cycle protects the deep absorption that allows children to reach the end of a task — often the most important moment in the whole process.</p>
+          </div>
+          <div class="reveal reveal-delay-3" style="border-top:1px solid rgba(255,255,255,0.1);padding-top:1.5rem;">
+            <h3 style="font-weight:700;font-size:1rem;margin-bottom:.4rem;color:var(--white);">Real materials, real consequences</h3>
+            <p style="font-size:.9rem;opacity:.55;line-height:1.65;">Glass pitchers break if you drop them. Water spills if you pour carelessly. That is the point. Real materials give real feedback. A child who pours water with care and succeeds has genuinely mastered something. No plastic, no shortcuts.</p>
+          </div>
+          <div class="reveal reveal-delay-3" style="border-top:1px solid rgba(255,255,255,0.1);padding-top:1.5rem;">
+            <h3 style="font-weight:700;font-size:1rem;margin-bottom:.4rem;color:var(--white);">AMI-informed guidance</h3>
+            <p style="font-size:.9rem;opacity:.55;line-height:1.65;">Our lead guides have trained in the Association Montessori Internationale tradition. Presentations follow proven sequences. Observation is as important as instruction. We study each child individually before introducing new material.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:1.5px;">
+        <div class="illus-frame" style="aspect-ratio:4/3;border:1.5px solid rgba(255,255,255,0.15);background:#1a1a1a;">
+          <img src="images/playground-pic.png" alt="The Storyline indoor playground" style="width:100%;height:100%;object-fit:cover;display:block;" />
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5px;">
+          <div style="padding:1.5rem;background:rgba(255,255,255,0.04);border:1.5px solid rgba(255,255,255,0.1);">
+            <p class="label" style="opacity:.3;margin-bottom:.5rem;">Class Size</p>
+            <p style="font-family:var(--font-serif);font-style:italic;font-size:2rem;font-weight:300;color:var(--white);">16</p>
+            <p style="font-size:.75rem;opacity:.35;">children max</p>
+          </div>
+          <div style="padding:1.5rem;background:rgba(255,255,255,0.04);border:1.5px solid rgba(255,255,255,0.1);">
+            <p class="label" style="opacity:.3;margin-bottom:.5rem;">Guides</p>
+            <p style="font-family:var(--font-serif);font-style:italic;font-size:2rem;font-weight:300;color:var(--white);">2</p>
+            <p style="font-size:.75rem;opacity:.35;">per classroom</p>
+          </div>
+          <div style="padding:1.5rem;background:rgba(255,255,255,0.04);border:1.5px solid rgba(255,255,255,0.1);">
+            <p class="label" style="opacity:.3;margin-bottom:.5rem;">Work Cycle</p>
+            <p style="font-family:var(--font-serif);font-style:italic;font-size:2rem;font-weight:300;color:var(--white);">3h</p>
+            <p style="font-size:.75rem;opacity:.35;">uninterrupted</p>
+          </div>
+          <div style="padding:1.5rem;background:rgba(255,255,255,0.04);border:1.5px solid rgba(255,255,255,0.1);">
+            <p class="label" style="opacity:.3;margin-bottom:.5rem;">Ages</p>
+            <p style="font-family:var(--font-serif);font-style:italic;font-size:2rem;font-weight:300;color:var(--white);">1.5–3.5</p>
+            <p style="font-size:.75rem;opacity:.35;">mixed age group</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     WAVE (out)
+══════════════════════════════════════════ -->
+<div class="wave-divider" aria-hidden="true" style="background:var(--ink);">
+  <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,24 Q22.5,6 45,24 T90,24 T135,24 T180,24 T225,24 T270,24 T315,24 T360,24 T405,24 T450,24 T495,24 T540,24 T585,24 T630,24 T675,24 T720,24 T765,24 T810,24 T855,24 T900,24 T945,24 T990,24 T1035,24 T1080,24 T1125,24 T1170,24 T1215,24 T1260,24 T1305,24 T1350,24 T1395,24 T1440,24 L1440,48 L0,48 Z" fill="#FAFAF8"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════════
+     DAILY SCHEDULE
+══════════════════════════════════════════ -->
+<section class="section section-white" aria-labelledby="schedule-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <h2 class="display-md" id="schedule-heading">The Daily<br><em class="serif-display">Rhythm.</em></h2>
+      </div>
+      <p class="body-md" style="max-width:40ch;opacity:.6;">Predictable structure gives children the safety to take risks within it. Every morning begins the same way — so children can focus on what to learn, not what comes next.</p>
+    </div>
+    <!-- Animated clock illustration -->
+    <div class="illus-wrap" aria-hidden="true" style="width:88px;margin:0 auto var(--space-md);">
+      <svg class="illus-svg ts-clock-face" width="88" height="88" viewBox="0 0 90 90" fill="none" stroke-linecap="round">
+        <circle cx="45" cy="45" r="42" stroke-width="1.8" class="dp" pathLength="1" style="--draw-delay:.1s;--draw-dur:.7s"/>
+        <line x1="45" y1="6" x2="45" y2="14" stroke-width="2" class="dp" pathLength="1" style="--draw-delay:.55s;--draw-dur:.12s"/>
+        <line x1="84" y1="45" x2="76" y2="45" stroke-width="2" class="dp" pathLength="1" style="--draw-delay:.63s;--draw-dur:.12s"/>
+        <line x1="45" y1="84" x2="45" y2="76" stroke-width="2" class="dp" pathLength="1" style="--draw-delay:.71s;--draw-dur:.12s"/>
+        <line x1="6" y1="45" x2="14" y2="45" stroke-width="2" class="dp" pathLength="1" style="--draw-delay:.79s;--draw-dur:.12s"/>
+        <line class="ts-clock-hour dp" x1="45" y1="45" x2="45" y2="25" stroke-width="3" pathLength="1" style="--draw-delay:.85s;--draw-dur:.2s"/>
+        <line class="ts-clock-min dp" x1="45" y1="45" x2="45" y2="11" stroke-width="1.8" pathLength="1" style="--draw-delay:.9s;--draw-dur:.2s"/>
+        <circle cx="45" cy="45" r="3" class="ts-dot ts-fade" style="--fill-delay:.95s;fill:#111111;stroke:none;"/>
+      </svg>
+    </div>
+    <div class="reveal" style="overflow-x:auto;">
+      <table class="schedule-table" role="table" aria-label="Daily schedule">
+        <thead>
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>8:00 – 8:20</td>
+            <td><strong>Arrival &amp; Welcome Circle</strong> — children hang their bags, greet the guide, transition to work</td>
+          </tr>
+          <tr>
+            <td>8:20 – 11:20</td>
+            <td><strong>Uninterrupted Work Cycle</strong> — individual and small-group Montessori work across all areas of the classroom</td>
+          </tr>
+          <tr>
+            <td>11:20 – 11:40</td>
+            <td><strong>Outdoor Time</strong> — gross motor play in the outdoor area, weather permitting</td>
+          </tr>
+          <tr>
+            <td>11:40 – 12:00</td>
+            <td><strong>Circle Time &amp; Story</strong> — songs, language games, group story, social-grace exercises</td>
+          </tr>
+          <tr>
+            <td>12:00 – 12:30</td>
+            <td><strong>Lunch &amp; Practical Life</strong> — children set tables, serve themselves, eat together, and clean up</td>
+          </tr>
+          <tr>
+            <td>12:30 – 1:00</td>
+            <td><strong>Rest / Quiet Work</strong> — some children rest; others may continue with quiet material</td>
+          </tr>
+          <tr>
+            <td>1:00</td>
+            <td><strong>Dismissal</strong> — individual farewells; guides available briefly for parent questions</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="body-sm reveal" style="margin-top:1rem;opacity:.45;">Half-day option available (dismissal at 12:00). Extended day until 3:00 pm on request.</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     TEAM / GUIDES
+══════════════════════════════════════════ -->
+<section class="section border-top-ink" aria-labelledby="team-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <div>
+        <h2 class="display-md" id="team-heading">Your Child's<br><em class="serif-display">Guides.</em></h2>
+      </div>
+    </div>
+
+    <div class="team-grid reveal">
+
+      <div class="team-card">
+        <div class="team-avatar" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.582-7 8-7s8 3 8 7"/>
+          </svg>
+        </div>
+        <p class="team-name">Simran Kaur</p>
+        <p class="team-role">Founder &amp; Lead Guide</p>
+        <p class="team-bio">AMI-informed Montessori educator with over a decade of experience in early childhood settings. Trained under mentors in Pune and Chennai before founding The Storyline in 2022.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.582-7 8-7s8 3 8 7"/>
+          </svg>
+        </div>
+        <p class="team-name">Ananya Sharma</p>
+        <p class="team-role">Montessori Guide</p>
+        <p class="team-bio">Specialises in language and sensorial development for toddlers. Ananya brings a quiet, observational presence to the classroom and a gift for knowing exactly when to step in — and when not to.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-avatar" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+            <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.582-7 8-7s8 3 8 7"/>
+          </svg>
+        </div>
+        <p class="team-name">Ritu Nanda</p>
+        <p class="team-role">Assistant Guide &amp; Coordinator</p>
+        <p class="team-bio">Handles admissions, parent communication, and classroom support. Parents describe her as the person who makes the whole place feel held — warm, organised, and always one step ahead.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     TOUR CTA
+══════════════════════════════════════════ -->
+<section class="section bg-ink" aria-label="Book a tour">
+  <div class="container">
+    <div style="max-width:640px;margin-inline:auto;text-align:center;">
+      <h2 class="display-lg reveal reveal-delay-1" style="color:var(--white);">
+        Come in.<br>
+        <em class="serif-display">Look around.</em>
+      </h2>
+      <svg class="wave-underline reveal reveal-delay-1" style="margin:0.5rem auto 1.5rem;width:150px;" viewBox="0 0 150 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M0,10 Q7.5,2 15,10 T30,10 T45,10 T60,10 T75,10 T90,10 T105,10 T120,10 T135,10 T150,10" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="3.5" stroke-linecap="round"/>
+      </svg>
+      <p class="body-md reveal reveal-delay-2" style="color:rgba(255,255,255,0.55);margin-bottom:2.5rem;max-width:42ch;margin-inline:auto;">
+        The best way to understand what we do is to see a morning in action. We offer 30-minute observation tours while children are at work — bring your questions.
+      </p>
+      <div class="reveal reveal-delay-3" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="connect.html#tour" class="btn btn-ghost-white">Book a Tour</a>
+        <a href="connect.html" class="btn" style="color:rgba(255,255,255,0.55);border:2px solid rgba(255,255,255,0.15);background:transparent;font-size:.75rem;">Get in Touch →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;">
+      <path d="M0,24 Q22.5,6 45,24 T90,24 T135,24 T180,24 T225,24 T270,24 T315,24 T360,24 T405,24 T450,24 T495,24 T540,24 T585,24 T630,24 T675,24 T720,24 T765,24 T810,24 T855,24 T900,24 T945,24 T990,24 T1035,24 T1080,24 T1125,24 T1170,24 T1215,24 T1260,24 T1305,24 T1350,24 T1395,24 T1440,24 L1440,0 L0,0 Z" fill="#111111"/>
+    </svg>
+  </div>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand-name">The Storyline.</p>
+        <p class="footer-brand-text">A Montessori preschool and artisan café in the heart of Mohali — where every family's story finds its next chapter.</p>
+        <div class="footer-social" aria-label="Social links">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://wa.me/919876543210" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigate</p>
+        <ul class="footer-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="montessori.html">Montessori</a></li>
+          <li><a href="cafe.html">Café</a></li>
+          <li><a href="connect.html">Connect</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Find Us</p>
+        <address style="font-style:normal;">
+          <p style="font-size:.875rem;opacity:.6;line-height:1.8;">
+            64-65-66, Airport Road, Sector 66 A<br>Sahibzada Ajit Singh Nagar, Punjab 140306<br>
+            <a href="tel:+919876543210" style="color:rgba(255,255,255,0.6);">+91 98765 43210</a><br>
+            <a href="mailto:hello@thestoryline.in" style="color:rgba(255,255,255,0.6);">hello@thestoryline.in</a>
+          </p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Storyline. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

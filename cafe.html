@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café — The Storyline</title>
+  <meta name="description" content="Speciality coffee, freshly baked breads, signature bowls and lunch at The Storyline Café, Sector 66 A, Mohali." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+<!-- ── Site Header ── -->
+<header class="site-header" role="banner">
+  <nav class="nav-inner" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="The Storyline — Home">
+      <img src="Admissions-Folder-1.svg" alt="The Storyline wordmark" height="56" />
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="montessori.html">Montessori</a></li>
+      <li><a href="cafe.html">Café</a></li>
+      <li><a href="connect.html">Connect</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="https://wa.me/919876543210" class="nav-phone" aria-label="Contact us on WhatsApp" target="_blank" rel="noopener noreferrer">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Contact Us
+      </a>
+      <button class="nav-hamburger" aria-expanded="false" aria-controls="nav-overlay" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<div class="nav-overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Navigation">
+  <nav class="nav-overlay-links" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="montessori.html">Montessori</a>
+    <a href="cafe.html">Café</a>
+    <a href="connect.html">Connect</a>
+  </nav>
+  <div class="nav-overlay-contact">
+    <a href="tel:+919876543210" class="label">+91 98765 43210</a>
+    <a href="mailto:hello@thestoryline.in" class="label">hello@thestoryline.in</a>
+    <p class="label" style="opacity:.4;margin-top:.5rem">Sector 66 A, SAS Nagar, Punjab</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     PAGE HERO
+══════════════════════════════════════════ -->
+<section class="page-hero" style="background:var(--ink);color:var(--white);border-bottom:none;" aria-labelledby="cafe-heading">
+  <div class="container">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:3rem;">
+      <!-- Text -->
+      <div style="max-width:680px;">
+        <h1 class="display-xl reveal reveal-delay-1" id="cafe-heading" style="color:var(--white);">
+          Every Story<br>
+          <em class="serif-display">has a Twist.</em>
+        </h1>
+        <svg class="wave-underline wave-underline--wide reveal reveal-delay-1" viewBox="0 0 360 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M0,10 Q7.5,2 15,10 T30,10 T45,10 T60,10 T75,10 T90,10 T105,10 T120,10 T135,10 T150,10 T165,10 T180,10 T195,10 T210,10 T225,10 T240,10 T255,10 T270,10 T285,10 T300,10 T315,10 T330,10 T345,10 T360,10" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="3.5" stroke-linecap="round"/>
+        </svg>
+        <p class="body-lg reveal reveal-delay-2" style="margin-top:1.5rem;max-width:52ch;color:rgba(255,255,255,0.6);">
+          Specialty coffee pulled with care. Sourdough baked from scratch each morning. Bowls that tell their own story. Open to everyone — parents, neighbours, anyone with a good reason to slow down.
+        </p>
+      </div>
+      <!-- Steaming cup illustration — hidden on mobile -->
+      <div class="cafe-hero-illus" aria-hidden="true">
+        <div class="illus-wrap ts-float-2" style="width:148px;padding-top:96px;">
+          <svg class="illus-svg illus-svg--white" width="148" height="210" viewBox="0 0 52 74" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path class="sp" d="M14,5 Q8,-6 14,-17 Q20,-26 14,-34"/>
+            <path class="sp" d="M26,2 Q20,-9 26,-20 Q32,-29 26,-37"/>
+            <path class="sp" d="M38,5 Q32,-6 38,-17 Q44,-26 38,-34"/>
+            <ellipse cx="26" cy="7" rx="18" ry="4" class="dp" pathLength="1" style="--draw-delay:.12s;--draw-dur:.38s"/>
+            <path d="M8,7 Q10,56 26,62 Q42,56 44,7" class="dp" pathLength="1" style="--draw-delay:.2s;--draw-dur:.7s"/>
+            <path d="M43,18 Q56,18 56,30 Q56,42 43,42" class="dp" pathLength="1" style="--draw-delay:.78s;--draw-dur:.4s"/>
+            <ellipse cx="26" cy="65" rx="26" ry="5" class="dp" pathLength="1" style="--draw-delay:.33s;--draw-dur:.48s"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     HOURS BANNER
+══════════════════════════════════════════ -->
+<div class="hours-banner" role="complementary" aria-label="Café hours">
+  <div class="hours-banner-item">
+    <p class="label">Everyday</p>
+    <p>9:00 am – 10:00 pm</p>
+  </div>
+  <div style="width:1px;height:32px;background:rgba(255,255,255,0.15);flex-shrink:0;"></div>
+  <div class="hours-banner-item">
+    <p class="label">Location</p>
+    <p>Sector 66 A, Mohali</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     MENU + ILLUSTRATION (two-column)
+══════════════════════════════════════════ -->
+<section class="section" aria-labelledby="menu-heading">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:3fr 2fr;gap:var(--space-sm);align-items:start;" id="menu-layout">
+
+      <!-- Menu column -->
+      <div>
+        <div class="section-header reveal" style="margin-bottom:var(--space-md);">
+          <div>
+            <h2 class="display-md" id="menu-heading">The<br><em class="serif-display">Menu.</em></h2>
+          </div>
+          <p class="body-md" style="max-width:36ch;opacity:.55;">Our favourites — the ones worth coming back for.</p>
+        </div>
+
+        <!-- Signature Food -->
+        <div class="menu-section reveal">
+          <h3 class="menu-section-title">Signature Food</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem">
+              <div><p class="menu-item-name">Kyoto Mushroom Toast</p><p class="menu-item-desc">Chilli miso mushrooms on hearty sourdough toast.</p></div>
+              <span class="menu-item-price">&#8377;285</span>
+            </div>
+            <div class="menu-item" role="listitem">
+              <div><p class="menu-item-name">Chicken Katsu Sando</p><p class="menu-item-desc">Crispy panko chicken cutlet with tangy slaw.</p></div>
+              <span class="menu-item-price">&#8377;295</span>
+            </div>
+            <div class="menu-item" role="listitem">
+              <div><p class="menu-item-name">Chicken Bao with Gochujang Mayo</p><p class="menu-item-desc">Steamed bao with crispy chicken and spicy Korean-inspired mayo.</p></div>
+              <span class="menu-item-price">&#8377;335</span>
+            </div>
+            <div class="menu-item" role="listitem">
+              <div><p class="menu-item-name">Miso Glazed Paneer</p><p class="menu-item-desc">A unique Indo-Japanese fusion small plate.</p></div>
+              <span class="menu-item-price">&#8377;345</span>
+            </div>
+            <div class="menu-item" role="listitem">
+              <div><p class="menu-item-name">Aloo Chaat with Furikake</p><p class="menu-item-desc">Indian street food meets Japanese seasoning.</p></div>
+              <span class="menu-item-price">&#8377;225</span>
+            </div>
+            <div class="menu-item" role="listitem">
+              <div><p class="menu-item-name">Teriyaki Chicken &amp; Spring Onion Flatbread</p><p class="menu-item-desc">One of the most distinctive flatbreads on the menu.</p></div>
+              <span class="menu-item-price">&#8377;375</span>
+            </div>
+            <div class="menu-item" role="listitem">
+              <div><p class="menu-item-name">Wasabi Cream &amp; Roasted Mushroom Flatbread</p><p class="menu-item-desc">Bold flavours with creamy heat.</p></div>
+              <span class="menu-item-price">&#8377;345</span>
+            </div>
+            <div class="menu-item" role="listitem">
+              <div><p class="menu-item-name">Kyoto Chicken Katsu Curry</p><p class="menu-item-desc">Crispy chicken in Japanese curry sauce with sticky rice.</p></div>
+              <span class="menu-item-price">&#8377;425</span>
+            </div>
+            <div class="menu-item" role="listitem">
+              <div><p class="menu-item-name">Lemongrass Chicken Buddha Bowl</p><p class="menu-item-desc">Quinoa, grilled chicken and citrus dressing.</p></div>
+              <span class="menu-item-price">&#8377;425</span>
+            </div>
+            <div class="menu-item" role="listitem">
+              <div><p class="menu-item-name">Butter Chicken Bowl</p><p class="menu-item-desc">Iconic Indian curry served over sticky rice.</p></div>
+              <span class="menu-item-price">&#8377;425</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Signature Desserts -->
+        <div class="menu-section reveal">
+          <h3 class="menu-section-title">Signature Desserts</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Matcha Cheesecake</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Yuzu Tart</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Shibuya Honey Toast</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Kyoto Chiffon Cake</p></div>
+          </div>
+          <p class="body-sm" style="margin-top:.75rem;opacity:.35;">Dessert prices on display at the counter.</p>
+        </div>
+
+        <!-- Signature Drinks -->
+        <div class="menu-section reveal">
+          <h3 class="menu-section-title">Signature Drinks</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem">
+              <p class="menu-item-name">Tiramisu Iced Latte <span style="opacity:.4;font-size:.78em;">Cold</span></p>
+              <span class="menu-item-price">&#8377;325</span>
+            </div>
+            <div class="menu-item" role="listitem">
+              <p class="menu-item-name">Vietnamese Coffee <span style="opacity:.4;font-size:.78em;">Cold</span></p>
+              <span class="menu-item-price">&#8377;275</span>
+            </div>
+            <div class="menu-item" role="listitem">
+              <p class="menu-item-name">TSL Cold Brew Special <span style="opacity:.4;font-size:.78em;">Cold</span></p>
+              <span class="menu-item-price">&#8377;300</span>
+            </div>
+            <div class="menu-item" role="listitem">
+              <p class="menu-item-name">Matcha Boba Latte <span style="opacity:.4;font-size:.78em;">Iced</span></p>
+              <span class="menu-item-price">&#8377;280</span>
+            </div>
+            <div class="menu-item" role="listitem">
+              <p class="menu-item-name">Cold Brew Tonic <span style="opacity:.4;font-size:.78em;">Cold</span></p>
+              <span class="menu-item-price">&#8377;295</span>
+            </div>
+            <div class="menu-item" role="listitem">
+              <p class="menu-item-name">Butterish Coffee <span style="opacity:.4;font-size:.78em;">Hot</span></p>
+              <span class="menu-item-price">&#8377;300</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="body-sm reveal" style="margin-top:1.5rem;opacity:.4;">All prices include taxes. Menu changes seasonally. Ask staff about allergens and dietary needs.</p>
+
+        <div class="reveal" style="margin-top:2.5rem;">
+          <button class="btn" id="open-full-menu" style="width:100%;justify-content:center;letter-spacing:.06em;">View Full Menu</button>
+        </div>
+      </div>
+
+            <!-- Illustration column -->
+      <div id="menu-art" style="display:flex;flex-direction:column;gap:var(--space-md);">
+
+        <div class="illus-frame reveal" style="aspect-ratio:3/4;">
+          <img src="images/butter-chicken-bowl.png" alt="Butter Chicken Bowl" style="object-fit:cover;filter:saturate(0.78) contrast(1.22) brightness(0.88);" />
+        </div>
+
+        <div class="illus-frame reveal" style="aspect-ratio:3/4;">
+          <img src="images/inspired-by-kyoto.png" alt="Inspired by Kyoto" style="object-fit:cover;filter:saturate(0.78) contrast(1.22) brightness(0.88);" />
+        </div>
+
+        <div class="illus-frame reveal reveal-delay-1" style="aspect-ratio:3/4;">
+          <img src="images/miso-mayo-fries.png" alt="Miso Mayo Fries" style="object-fit:cover;filter:saturate(0.78) contrast(1.22) brightness(0.88);" />
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Photo collage -->
+    <div class="reveal" style="margin-top:clamp(2.5rem,5vw,4rem);">
+      <div class="menu-collage-grid">
+        <div class="illus-frame"><img src="images/coffee-hands.png" alt="Coffee held in hands" style="object-fit:cover;filter:saturate(0.78) contrast(1.22) brightness(0.88);" /></div>
+        <div class="illus-frame"><img src="images/espresso-bw.png" alt="Espresso cup" style="object-fit:cover;filter:saturate(0.78) contrast(1.22) brightness(0.88);" /></div>
+        <div class="illus-frame"><img src="images/wood-fired-flatbread.png" alt="Wood-fired Flatbread" style="object-fit:cover;filter:saturate(0.78) contrast(1.22) brightness(0.88);" /></div>
+        <div class="illus-frame"><img src="images/kyoto-street.png" alt="Kyoto street scene" style="object-fit:cover;filter:saturate(0.78) contrast(1.22) brightness(0.88);" /></div>
+        <div class="illus-frame"><img src="images/iced-matcha-latte.png" alt="Iced Matcha Latte" style="object-fit:cover;filter:saturate(0.78) contrast(1.22) brightness(0.88);" /></div>
+        <div class="illus-frame"><img src="images/zensai-bowl.png" alt="Zensai Bowl" style="object-fit:cover;filter:saturate(0.78) contrast(1.22) brightness(0.88);" /></div>
+        <div class="illus-frame"><img src="images/chocolate-cake.png" alt="Chocolate cake slice" style="object-fit:cover;filter:saturate(0.78) contrast(1.22) brightness(0.88);" /></div>
+        <div class="illus-frame"><img src="images/sure-shot-awakening.png" alt="The Sure-Shot Awakening" style="object-fit:cover;filter:saturate(0.78) contrast(1.22) brightness(0.88);" /></div>
+        <div class="illus-frame"><img src="images/cold-brew.png" alt="Cold brew coffee" style="object-fit:cover;filter:saturate(0.78) contrast(1.22) brightness(0.88);" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     WAVE
+══════════════════════════════════════════ -->
+<div class="wave-divider" aria-hidden="true" style="color:var(--ink);">
+  <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,24 Q22.5,6 45,24 T90,24 T135,24 T180,24 T225,24 T270,24 T315,24 T360,24 T405,24 T450,24 T495,24 T540,24 T585,24 T630,24 T675,24 T720,24 T765,24 T810,24 T855,24 T900,24 T945,24 T990,24 T1035,24 T1080,24 T1125,24 T1170,24 T1215,24 T1260,24 T1305,24 T1350,24 T1395,24 T1440,24 L1440,48 L0,48 Z" fill="#111111"/>
+  </svg>
+</div>
+
+<!-- ══════════════════════════════════════════
+     AMBIANCE / GALLERY
+══════════════════════════════════════════ -->
+<section class="section-sm section-inverted" aria-labelledby="gallery-heading">
+  <div class="container">
+    <div class="section-header reveal" style="margin-bottom:var(--space-md);">
+      <div>
+        <h2 class="display-md" id="gallery-heading" style="color:var(--white);">
+          Made to<br>
+          <em class="serif-display">linger in.</em>
+        </h2>
+      </div>
+      <p class="body-md" style="max-width:40ch;color:rgba(255,255,255,0.5);">
+        Terrazzo floors, oak ceiling, bookshelves you can actually use. A spot designed for long mornings and unhurried afternoons.
+      </p>
+    </div>
+
+    <!-- 2-column gallery -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(8px,1.5vw,16px);">
+      <div class="reveal" style="aspect-ratio:4/3;overflow:hidden;">
+        <img src="images/cafe-seating.png" alt="The Storyline café seating area with terrazzo floors and oak ceiling" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+      <div class="reveal reveal-delay-1" style="aspect-ratio:4/3;overflow:hidden;">
+        <img src="images/cafe-enterance.png" alt="The Storyline café entrance with brand poster" style="width:100%;height:100%;object-fit:cover;display:block;" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     WAVE (out of black)
+══════════════════════════════════════════ -->
+<div class="wave-divider" aria-hidden="true" style="background:var(--ink);">
+  <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,24 Q22.5,6 45,24 T90,24 T135,24 T180,24 T225,24 T270,24 T315,24 T360,24 T405,24 T450,24 T495,24 T540,24 T585,24 T630,24 T675,24 T720,24 T765,24 T810,24 T855,24 T900,24 T945,24 T990,24 T1035,24 T1080,24 T1125,24 T1170,24 T1215,24 T1260,24 T1305,24 T1350,24 T1395,24 T1440,24 L1440,48 L0,48 Z" fill="#FAFAF8"/>
+  </svg>
+</div>
+
+
+<!-- ══════════════════════════════════════════
+     CTA
+══════════════════════════════════════════ -->
+<section class="section bg-ink border-top-ink" aria-label="School enrolment CTA">
+  <div class="container text-center">
+    <h2 class="display-lg reveal reveal-delay-1" style="color:var(--white);max-width:16ch;margin-inline:auto;">
+      Exploring our Montessori?
+    </h2>
+    <p class="body-md reveal reveal-delay-2" style="color:rgba(255,255,255,0.5);max-width:42ch;margin:1rem auto 2.5rem;">
+      The preschool and café share the same building — and the same philosophy. Book a tour of the school while you're here.
+    </p>
+    <div class="reveal reveal-delay-3" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="connect.html#tour" class="btn btn-ghost-white">Book a School Tour</a>
+      <a href="montessori.html" class="btn" style="color:rgba(255,255,255,0.5);border:2px solid rgba(255,255,255,0.15);background:transparent;font-size:.75rem;">Learn About Montessori →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="display:block;width:100%;">
+      <path d="M0,24 Q22.5,6 45,24 T90,24 T135,24 T180,24 T225,24 T270,24 T315,24 T360,24 T405,24 T450,24 T495,24 T540,24 T585,24 T630,24 T675,24 T720,24 T765,24 T810,24 T855,24 T900,24 T945,24 T990,24 T1035,24 T1080,24 T1125,24 T1170,24 T1215,24 T1260,24 T1305,24 T1350,24 T1395,24 T1440,24 L1440,0 L0,0 Z" fill="#111111"/>
+    </svg>
+  </div>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-brand-name">The Storyline.</p>
+        <p class="footer-brand-text">A Montessori preschool and artisan café in the heart of Mohali — where every family's story finds its next chapter.</p>
+        <div class="footer-social" aria-label="Social links">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://wa.me/919876543210" aria-label="WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Navigate</p>
+        <ul class="footer-links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="montessori.html">Montessori</a></li>
+          <li><a href="cafe.html">Café</a></li>
+          <li><a href="connect.html">Connect</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Find Us</p>
+        <address style="font-style:normal;">
+          <p style="font-size:.875rem;opacity:.6;line-height:1.8;">
+            64-65-66, Airport Road, Sector 66 A<br>Sahibzada Ajit Singh Nagar, Punjab 140306<br>
+            <a href="tel:+919876543210" style="color:rgba(255,255,255,0.6);">+91 98765 43210</a><br>
+            <a href="mailto:hello@thestoryline.in" style="color:rgba(255,255,255,0.6);">hello@thestoryline.in</a>
+          </p>
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Storyline. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Full Menu Modal ── -->
+<div id="full-menu-modal" role="dialog" aria-modal="true" aria-labelledby="full-menu-title">
+  <div class="modal-header">
+    <p class="label" id="full-menu-title" style="font-size:.65rem;letter-spacing:.14em;color:rgba(255,255,255,.5);">Full Menu</p>
+    <button class="modal-close" id="full-menu-close" aria-label="Close full menu">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line x1="1" y1="1" x2="13" y2="13"/><line x1="13" y1="1" x2="1" y2="13"/>
+      </svg>
+    </button>
+  </div>
+  <div class="modal-inner">
+    <h2 class="display-md" style="color:var(--white);margin-bottom:2.5rem;">The Full<br><em class="serif-display">Menu.</em></h2>
+    <div class="modal-grid">
+
+      <div>
+        <div class="menu-section">
+          <h3 class="menu-section-title">Brekkie &amp; Brunch</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Eggs Any Style</p><p class="menu-item-desc">Scrambled / Omelette / Fried, served with sourdough slices, cultured butter and hash browns.</p></div><span class="menu-item-price">&#8377;245</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Egg Tamago Wrap</p><p class="menu-item-desc">Scrambled eggs, onion and jalape&#241;o chillies with cheese and garlicky sauce.</p></div><span class="menu-item-price">&#8377;285</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Chicken Brekkie Wrap</p><p class="menu-item-desc">Chicken, chipotle and lettuce with cheese and mustard BBQ sauce.</p></div><span class="menu-item-price">&#8377;285</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Kyoto Mushroom Toast</p><p class="menu-item-desc">Chilli miso mushrooms on hearty sourdough toast.</p></div><span class="menu-item-price">&#8377;285</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Le Avo Brekkie Wrap</p><p class="menu-item-desc">Avocado and lettuce with cheese and tonkatsu sauce.</p></div><span class="menu-item-price">&#8377;335</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Chai-Spiced Poha with Nuts</p><p class="menu-item-desc">Light-spiced poha with nuts and warm chai notes.</p></div><span class="menu-item-price">&#8377;285</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Granola with Fruit &amp; Yogurt</p><p class="menu-item-desc">Wholesome grains with fresh fruit and honey yogurt.</p></div><span class="menu-item-price">&#8377;265</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">All Day Bites</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Panko-Crusted Chicken Slider</p><p class="menu-item-desc">Juicy chicken patty with miso mayo in a bun.</p></div><span class="menu-item-price">&#8377;295</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Chicken Katsu Sando</p><p class="menu-item-desc">Panko chicken cutlet sandwich with tangy slaw.</p></div><span class="menu-item-price">&#8377;295</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Croissant Sandwich</p><p class="menu-item-desc">Flaky croissant with ham, egg or grilled vegetables.</p></div><span class="menu-item-price">&#8377;345</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Bruschetta Trio</p><p class="menu-item-desc">Crisp toasts topped with tomato, mushroom or chicken.</p></div><span class="menu-item-price">&#8377;325</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Chicken Bao with Gochujang Mayo</p><p class="menu-item-desc">Steamed bao with crispy chicken and spicy mayo.</p></div><span class="menu-item-price">&#8377;335</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Sweet Potato Katsu with Curry Dip</p><p class="menu-item-desc">Panko-coated sweet potato fries with Japanese curry sauce.</p></div><span class="menu-item-price">&#8377;325</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Miso Glazed Paneer</p><p class="menu-item-desc">Indian cottage cheese glazed in umami-rich miso.</p></div><span class="menu-item-price">&#8377;345</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Grilled Veggie Slider</p><p class="menu-item-desc">Vegetable-based patty with slaw and avocado.</p></div><span class="menu-item-price">&#8377;265</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Tofu Gochujang Bao</p><p class="menu-item-desc">Steamed bao with crispy tofu and spicy mayo.</p></div><span class="menu-item-price">&#8377;295</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Quiche Lorraine / Veg Quiche</p><p class="menu-item-desc">Baked savory tart with egg custard filling.</p></div><span class="menu-item-price">&#8377;295</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Light Bites &amp; Sides</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Quinoa &amp; Beetroot Salad</p><p class="menu-item-desc">With goat cheese and walnuts.</p></div><span class="menu-item-price">&#8377;295</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Caesar Salad</p><p class="menu-item-desc">Classic Caesar with coffee croutons.</p></div><span class="menu-item-price">&#8377;295</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Aloo Chaat with Furikake</p><p class="menu-item-desc">Indian-style potato chaat layered with Japanese topping.</p></div><span class="menu-item-price">&#8377;225</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Sesame Soba Salad</p><p class="menu-item-desc">Cold soba noodles with sesame-soy dressing.</p></div><span class="menu-item-price">&#8377;295</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Avocado Toast</p><p class="menu-item-desc">Smashed avocado and lemon zest on toasted sourdough.</p></div><span class="menu-item-price">&#8377;265</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Miso Mayo Fries</p><p class="menu-item-desc">Golden fries with a punchy miso mayo dip.</p></div><span class="menu-item-price">&#8377;225</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Japanese-Inspired Italian Flatbreads</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Mandarin Miso Margherita</p><p class="menu-item-desc">Tomato, mozzarella and mandarin miso glaze.</p></div><span class="menu-item-price">&#8377;325</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Teriyaki Chicken &amp; Spring Onion</p><p class="menu-item-desc">Savory flatbread with chicken and scallions.</p></div><span class="menu-item-price">&#8377;375</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Wasabi Cream &amp; Roasted Mushroom</p><p class="menu-item-desc">Earthy mushrooms with spicy wasabi cream.</p></div><span class="menu-item-price">&#8377;345</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Tofu, Pickled Ginger &amp; Scallion</p><p class="menu-item-desc">Zesty and tangy toppings on a thin crust.</p></div><span class="menu-item-price">&#8377;345</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Signature Bowls &amp; Plates</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Chicken Teriyaki Bowl</p><p class="menu-item-desc">Grilled chicken with teriyaki glaze over rice.</p></div><span class="menu-item-price">&#8377;425</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Lemongrass Chicken Buddha Bowl</p><p class="menu-item-desc">Quinoa, grilled chicken and citrus dressing.</p></div><span class="menu-item-price">&#8377;425</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Kyoto Chicken Katsu Curry</p><p class="menu-item-desc">Crispy chicken in curry sauce with sticky rice.</p></div><span class="menu-item-price">&#8377;425</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Thai Curry Chicken Rice Bowl</p><p class="menu-item-desc">Charred chicken with Thai curry glaze and pickles.</p></div><span class="menu-item-price">&#8377;425</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Seasonal Buddha Bowl</p><p class="menu-item-desc">Grains, tofu and fresh pickled veggies.</p></div><span class="menu-item-price">&#8377;375</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Zensai Bowl</p><p class="menu-item-desc">Quinoa, edamame, tofu and greens in sesame green curry.</p></div><span class="menu-item-price">&#8377;375</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Sweet Potato Katsu Curry</p><p class="menu-item-desc">Panko sweet potato cutlet with Japanese curry and rice.</p></div><span class="menu-item-price">&#8377;375</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Mushrooms Teriyaki Rice Bowl</p><p class="menu-item-desc">Glazed mushrooms and nori over jasmine rice.</p></div><span class="menu-item-price">&#8377;375</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Indian Twisty Nibbles</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Masala Bombay Style Sandwich</p><p class="menu-item-desc">Spiced potato or chicken grilled between slices.</p></div><span class="menu-item-price">&#8377;275</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Paneer Makhani Wrap</p><p class="menu-item-desc">Paneer in creamy tomato gravy wrapped in a tortilla.</p></div><span class="menu-item-price">&#8377;325</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Tandoori Chicken Croissant</p><p class="menu-item-desc">Flaky croissant with bold tandoori stuffing.</p></div><span class="menu-item-price">&#8377;375</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Butter Chicken Bowl</p><p class="menu-item-desc">Iconic Indian curry served over sticky rice.</p></div><span class="menu-item-price">&#8377;425</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Mini Samosa Basket</p><p class="menu-item-desc">Bite-sized veg and chicken samosas with chutney.</p></div><span class="menu-item-price">&#8377;255</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Kyoto Chaat Plate</p><p class="menu-item-desc">Fusion chaat with papdi, wasabi peas and spicy curd.</p></div><span class="menu-item-price">&#8377;225</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="menu-section">
+          <h3 class="menu-section-title">Other Mains</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Herbed Grilled Chicken</p><p class="menu-item-desc">Grilled chicken breast with chimichurri and potatoes.</p></div><span class="menu-item-price">&#8377;425</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Miso Ramen</p><p class="menu-item-desc">Rich miso broth with tofu, corn and spring onions.</p></div><span class="menu-item-price">&#8377;375</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Spicy Chicken Ramen</p><p class="menu-item-desc">Fiery broth with grilled chicken, chili oil and sesame.</p></div><span class="menu-item-price">&#8377;425</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Creamy Truffle Pasta</p><p class="menu-item-desc">Penne in truffle-infused cream with mushrooms or chicken.</p></div><span class="menu-item-price">&#8377;425</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Baked Lasagne Slice</p><p class="menu-item-desc">Rustic Italian lasagne served with seasonal vegetable ratatouille.</p></div><span class="menu-item-price">&#8377;425</span></div>
+            <div class="menu-item" role="listitem"><div><p class="menu-item-name">Spaghetti Aglio e Olio</p><p class="menu-item-desc">Classic pasta with garlic, chili and olive oil.</p></div><span class="menu-item-price">&#8377;375</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Desserts</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Coffee Caramel French Toast</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Matcha Cheesecake</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Yuzu Tart</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Shibuya Honey Toast</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Kyoto Chiffon Cake</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Strawberry &amp; Chocolate Shortcake</p></div>
+          </div>
+          <p class="menu-item-name" style="margin-top:1.25rem;margin-bottom:.5rem;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.45;">Croissants</p>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Butter</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Almond</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Matcha Icing</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Chocolate</p></div>
+          </div>
+          <p class="menu-item-name" style="margin-top:1.25rem;margin-bottom:.5rem;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.45;">Tea Cake of the Day</p>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Chocolate</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Lemon</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Pineapple</p></div>
+          </div>
+          <p class="menu-item-name" style="margin-top:1.25rem;margin-bottom:.5rem;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.45;">Levain Cookies</p>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Butter Nuts &amp; Cranberry</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Chocolate &amp; Walnut</p></div>
+          </div>
+          <p class="menu-item-name" style="margin-top:1.25rem;margin-bottom:.5rem;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.45;">3&#34; Tarts</p>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Chocolate &amp; Coffee</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Banana &amp; Caramel</p></div>
+          </div>
+          <p class="menu-item-name" style="margin-top:1.25rem;margin-bottom:.5rem;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.45;">3&#34; Strudel</p>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Apple or Pineapple (season based)</p></div>
+          </div>
+          <p class="body-sm" style="margin-top:1rem;opacity:.35;">Dessert prices on display at the counter.</p>
+        </div>
+
+        <div style="display:flex;align-items:center;gap:1rem;margin:2.5rem 0 1.5rem;" aria-hidden="true">
+          <div style="flex:1;height:1.5px;background:rgba(255,255,255,0.12);"></div>
+          <p class="label" style="opacity:.35;white-space:nowrap;font-size:.65rem;letter-spacing:.14em;color:rgba(255,255,255,0.5);">Beverages</p>
+          <div style="flex:1;height:1.5px;background:rgba(255,255,255,0.12);"></div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Hot Brew</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Espresso</p><span class="menu-item-price">&#8377;189</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Americano</p><span class="menu-item-price">&#8377;220</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Cortado</p><span class="menu-item-price">&#8377;240</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Cappuccino</p><span class="menu-item-price">&#8377;250</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Latte</p><span class="menu-item-price">&#8377;250</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Macchiato</p><span class="menu-item-price">&#8377;220</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Mocha</p><span class="menu-item-price">&#8377;260</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Flat White</p><span class="menu-item-price">&#8377;250</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Matcha</p><span class="menu-item-price">&#8377;280</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Bon-bon</p><span class="menu-item-price">&#8377;250</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Specialty Coffee</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Vietnamese <span style="opacity:.4;font-size:.78em;">Cold</span></p><span class="menu-item-price">&#8377;275</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Butterish Coffee <span style="opacity:.4;font-size:.78em;">Hot</span></p><span class="menu-item-price">&#8377;300</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Spanish Latte <span style="opacity:.4;font-size:.78em;">Hot</span></p><span class="menu-item-price">&#8377;325</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">TSL Cold Brew Special <span style="opacity:.4;font-size:.78em;">Cold</span></p><span class="menu-item-price">&#8377;300</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Tiramisu Iced Latte <span style="opacity:.4;font-size:.78em;">Cold</span></p><span class="menu-item-price">&#8377;325</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Iced Coffee &amp; Teas</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Iced Americano</p><span class="menu-item-price">&#8377;250</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Iced Latte</p><span class="menu-item-price">&#8377;250</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Frappuccino</p><span class="menu-item-price">&#8377;275</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Iced Cappuccino</p><span class="menu-item-price">&#8377;275</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Iced Matcha Latte</p><span class="menu-item-price">&#8377;300</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Iced Tea Yuzu</p><span class="menu-item-price">&#8377;225</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Hojicha Ice Tea</p><span class="menu-item-price">&#8377;225</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Jasmine Iced Tea</p><span class="menu-item-price">&#8377;225</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Iced Green Tea</p><span class="menu-item-price">&#8377;195</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Cold Brew Program</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Classic Cold Brew</p><span class="menu-item-price">&#8377;250</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Cold Brew Lemonade</p><span class="menu-item-price">&#8377;270</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Cold Brew Tonic</p><span class="menu-item-price">&#8377;295</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Manual Brew Bar</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Aeropress</p><span class="menu-item-price">&#8377;250</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Pour Over</p><span class="menu-item-price">&#8377;250</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">French Press</p><span class="menu-item-price">&#8377;250</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Affogato Storyline</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Vanilla</p><span class="menu-item-price">&#8377;250</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Chocolate</p><span class="menu-item-price">&#8377;280</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Pistachio</p><span class="menu-item-price">&#8377;280</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Bubble Teas (Iced)</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Masala Tea Boba</p><span class="menu-item-price">&#8377;220</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Strawberry Boba Tea</p><span class="menu-item-price">&#8377;250</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Matcha Boba Latte</p><span class="menu-item-price">&#8377;280</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Tea &amp; Alternate Brews</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Masala Tea</p><span class="menu-item-price">&#8377;195</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Hojicha Tea</p><span class="menu-item-price">&#8377;225</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Jasmine Tea</p><span class="menu-item-price">&#8377;225</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Green Tea</p><span class="menu-item-price">&#8377;195</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Blue Pea Flowers</p><span class="menu-item-price">&#8377;245</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">English Breakfast</p><span class="menu-item-price">&#8377;155</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Earl Grey</p><span class="menu-item-price">&#8377;155</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Cranberry</p><span class="menu-item-price">&#8377;155</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Raspberry</p><span class="menu-item-price">&#8377;155</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Camomile</p><span class="menu-item-price">&#8377;155</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Smoothies &amp; Shakes</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Banana Almond Shake</p><span class="menu-item-price">&#8377;325</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Mango Yuzu Smoothie</p><span class="menu-item-price">&#8377;345</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Berry Antioxidant Smoothie</p><span class="menu-item-price">&#8377;345</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Avocado Spinach Smoothie</p><span class="menu-item-price">&#8377;345</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Cold Cocoa Shake</p><span class="menu-item-price">&#8377;325</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Vanilla Bean Shake</p><span class="menu-item-price">&#8377;325</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Mocktails</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Snow Colada</p><span class="menu-item-price">&#8377;285</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Black-o-magic</p><span class="menu-item-price">&#8377;265</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Mango Caprioka</p><span class="menu-item-price">&#8377;265</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Italian Smooch</p><span class="menu-item-price">&#8377;265</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Berry Basil</p><span class="menu-item-price">&#8377;265</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Virgin Mojito</p><span class="menu-item-price">&#8377;265</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Fruity Sangria</p><span class="menu-item-price">&#8377;285</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Berrylicious</p><span class="menu-item-price">&#8377;265</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Canned Soda</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Coke / Sprite</p><span class="menu-item-price">&#8377;100</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Coke Zero</p><span class="menu-item-price">&#8377;120</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Red Bull</p><span class="menu-item-price">&#8377;150</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Add-ons</h3>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Almond Milk</p><span class="menu-item-price">&#8377;100</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Oats Milk</p><span class="menu-item-price">&#8377;100</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Hazelnut</p><span class="menu-item-price">&#8377;50</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Caramel</p><span class="menu-item-price">&#8377;50</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Vanilla</p><span class="menu-item-price">&#8377;50</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Cinnamon</p><span class="menu-item-price">&#8377;50</span></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Whipped Cream</p><span class="menu-item-price">&#8377;50</span></div>
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h3 class="menu-section-title">Kids Menu</h3>
+          <p class="menu-item-name" style="margin-bottom:.5rem;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.45;">Food</p>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Granola with Fruit and Yogurt</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Sweet Potato Katsu with Curry Dip</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Mandarin Miso Margherita Flatbread</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Bombay Style Masala Sandwich</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Cream Truffle Pasta</p></div>
+          </div>
+          <p class="menu-item-name" style="margin-top:1.25rem;margin-bottom:.5rem;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;opacity:.45;">Beverages</p>
+          <div class="menu-items" role="list">
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Gurbandi Badam Milk</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Banana Shake</p></div>
+            <div class="menu-item" role="listitem"><p class="menu-item-name">Hot Chocolate</p></div>
+          </div>
+          <p class="body-sm" style="margin-top:1rem;opacity:.35;">Kids menu pricing available at the counter.</p>
+        </div>
+      </div>
+
+    </div>
+    <p class="body-sm" style="margin-top:2rem;opacity:.35;">All prices include taxes. Menu changes seasonally. Ask staff about allergens and dietary needs.</p>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
