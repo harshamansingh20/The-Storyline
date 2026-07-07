@@ -26,7 +26,7 @@
   --space-2xl: 11rem;
 
   --max-w:     1280px;
-  --nav-h:     72px;
+  --nav-h:     88px;
 
   --ease-out:  cubic-bezier(0.22, 1, 0.36, 1);
   --ease-in:   cubic-bezier(0.64, 0, 0.78, 0);
@@ -241,11 +241,11 @@ input, textarea, select {
   text-decoration: none;
   flex-shrink: 0;
 }
-.nav-logo img, .nav-logo svg { height: 56px; width: auto; }
+.nav-logo img, .nav-logo svg { height: 68px; width: auto; }
 .nav-logo-text {
   font-family: var(--font-sans);
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 1.15rem;
   letter-spacing: -0.02em;
   color: var(--ink);
   line-height: 1;
@@ -265,7 +265,7 @@ input, textarea, select {
   gap: var(--space-md);
 }
 .nav-links a {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
